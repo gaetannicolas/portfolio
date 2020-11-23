@@ -1,14 +1,14 @@
 :root {
   --bg: #0E1238;
   --size: 40px;
-  --lineWidth: 2px;
+  --lineWidth: 1px;
   --burgerPadding: 16px;
 
   --burger-color: #ffffff;
 
   --menu-bg: #171d54;
 
-  --logo-color: #2BD7BA;
+  --green: #2BD7BA;
 
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
@@ -30,7 +30,7 @@ body > * {
 }
 body {
   color: #FFFFFF;
-  font-family: Muli, 'Open Sans', acdrial, sans-serif;
+  font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -41,11 +41,17 @@ body {
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 
-#content {
+.content {
   margin: 0 auto;
   max-width: 960;
-  padding: 0 1.0875rem 1.45rem;
+  padding: 0 2.5rem 1.45rem;
 }
+
+.fullHeight {
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
 
 .social-icons {
   display: inline-block;

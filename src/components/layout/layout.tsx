@@ -28,10 +28,11 @@ library.add(
 
 import Header from '../header/index';
 import './normalize.css';
+import './font.css';
 import './layout.css';
 import Footer from '../footer';
 
-const Layout: FunctionComponent<{}> = ({ children }) => {
+const Layout: FunctionComponent<{children: React.ReactNode;}> = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -59,17 +60,7 @@ const Layout: FunctionComponent<{}> = ({ children }) => {
         siteTagline={data.site.siteMetadata.tagline}
         socialLinks={data.site.siteMetadata.socialLinks}
       />
-      <div
-        id="content"
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-
-      </div>
+      <main id="content" className="content">{children}</main>
       <Footer copyrightTagline={data.site.siteMetadata.copyrightTagline}/>
     </>
   );

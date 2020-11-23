@@ -1,36 +1,42 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { FunctionComponent, useState, useRef } from 'react';
 import { Helmet } from 'react-helmet';
+import { useOnClickOutside } from '../../hooks';
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 const NavBar: FunctionComponent<{}> = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const wrapperRef = useRef(null);
+  useOnClickOutside(wrapperRef, () => setMenuOpen(false));
 
   return (
     <div className="navbar">
       <Helmet>
         <body className={menuOpen ? 'blur' : ''} />
       </Helmet>
-      <button onClick={toggleMenu} type="button" className="navbar__button">
-        <div className={menuOpen ? "burger active" : "burger"}>
-          <div className="burger__line burger__line--first"></div>
-          <div className="burger__line burger__line--middle"></div>
-          <div className="burger__line burger__line--last"></div>
-        </div>
-      </button>
+      <div ref={wrapperRef} >
+        <button onClick={toggleMenu} type="button" className="navbar__button">
+          <div className={menuOpen ? "burger active" : "burger"}>
+            <div className="burger__line burger__line--first"></div>
+            <div className="burger__line burger__line--middle"></div>
+            <div className="burger__line burger__line--last"></div>
+          </div>
+        </button>
         <aside className={menuOpen ? "menu active" : "menu"}>
           <nav className="menu__nav">
             <li className="menu__item">
-              <a className="menu__link">About</a>
+              <a href="/" className="menu__link">About</a>
             </li>
             <li className="menu__item">
-              <a className="menu__link">Project</a>
+              <a href="/" className="menu__link">Project</a>
             </li>
             <li className="menu__item">
-              <a className="menu__link">Contact</a>
+              <a href="/" className="menu__link">Contact</a>
             </li>
             <li className="menu__item menu__item--resume">
-              <a className="menu__link">Resume</a>
+              <a href="/" className="menu__link">Resume</a>
             </li>
           </nav>
           <div className="menu__social">
@@ -40,6 +46,7 @@ const NavBar: FunctionComponent<{}> = () => {
           </div>
 
         </aside>
+      </div>
     </div>
   );
 }

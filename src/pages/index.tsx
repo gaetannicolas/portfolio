@@ -7,18 +7,22 @@ import Image from '../components/image';
 import SEO from '../components/seo';
 import PostsList from '../components/posts-list';
 import Hero from '../components/hero/hero';
+import About from '../components/about/about';
+import Projects from '../components/project/projects';
+import Contact from '../components/contact/contact';
 
-const getPosts = graphql`
+const getProjects = graphql`
   {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(sort: { fields: frontmatter___title, order: DESC }) {
       totalCount
       edges {
         node {
           frontmatter {
             title
-            slug
-            date(formatString: "MMMM Do, YYYY")
             author
+            authorLink
+            techno
+            link
             image {
               childImageSharp {
                 fluid {
@@ -35,20 +39,14 @@ const getPosts = graphql`
 `;
 
 const IndexPage: FunctionComponent<{}> = () => {
-  const response = useStaticQuery(getPosts);
-  const posts = response.allMdx.edges;
+  const response = useStaticQuery(getProjects);
+  const projects = response.allMdx.edges;
   return (
     <Layout>
       <SEO title="Home" />
       <Hero />
-      {/* <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div> */}
-      {/* <Link to="/page-2/">Go to page 2</Link> */}
-      {/* <PostsList posts={posts} /> */}
+      <About />
+      <Projects projects={projects} />
     </Layout>
   );
 };

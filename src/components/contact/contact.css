@@ -1,0 +1,28 @@
+.contact {
+  padding: 2rem 2.5rem 0 0;
+  box-sizing: border-box;
+}
+
+.contact__title {
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.contact__text {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.contact__link {
+  text-decoration: none;
+  /* color: #fff; */
+  color: var(--green)
+}
+
+.copyright {
+  margin-top: 180px;
+  margin-bottom: 30px;
+}

@@ -9,11 +9,21 @@ body.blur #content > * {
   user-select: none;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  --bg: rgb(14, 18, 56);
+
+  background-color: rgba(14, 18, 56, 0.98);
+}
+
 .header-container {
   display: flex;
   padding: 0 10px 0 25px;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
 }
 .logo {
   width: 50px;
@@ -171,6 +181,7 @@ body.blur #content > * {
   border: 1px solid var(--green);
   padding: 10px;
   border-radius: 8px;
+  margin-top: 40px;
 }
 
 .menu__item--resume .menu__link {

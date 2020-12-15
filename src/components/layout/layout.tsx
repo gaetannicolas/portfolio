@@ -30,7 +30,7 @@ import Header from '../header/index';
 import './normalize.css';
 import './font.css';
 import './layout.css';
-import Footer from '../footer';
+import Contact from '../contact/contact';
 
 const Layout: FunctionComponent<{children: React.ReactNode;}> = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -60,8 +60,11 @@ const Layout: FunctionComponent<{children: React.ReactNode;}> = ({ children }) =
         siteTagline={data.site.siteMetadata.tagline}
         socialLinks={data.site.siteMetadata.socialLinks}
       />
-      <main id="content" className="content">{children}</main>
-      <Footer copyrightTagline={data.site.siteMetadata.copyrightTagline}/>
+      <main id="content" className="content">
+        {children}
+        <Contact socialLinks={data.site.siteMetadata.socialLinks} copyrightTagline={data.site.siteMetadata.copyrightTagline}/>
+      </main>
+
     </>
   );
 };

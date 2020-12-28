@@ -5,12 +5,9 @@ module.exports = {
     description: `Gaetan NICOLAS - Portfolio - Developer Front-End - React, React Native, VueJS`,
     author: `@gaetannicolas`,
     socialLinks: {
-      github: 'gaetannicolas',
-      facebook: 'wisdomgeek',
-      linkedIn: 'gaétan-nicolas-586711146',
-      twitter: 'saranshk',
-      youTube: 'UClW56GhpAKrRu-ZSqAoPjHg',
-      instagram: 'kataria.saransh',
+      mail: 'gaetan@gaetannicolas.fr',
+      github: 'https://github.com/gaetannicolas',
+      linkedIn: 'https://linkedin.com/in/gaétan-nicolas-586711146',
     },
     copyrightTagline: 'Gaétan NICOLAS'
   },

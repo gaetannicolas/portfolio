@@ -1,27 +1,10 @@
 import { Link } from 'gatsby';
 import React, { FunctionComponent } from 'react';
 import NavBar from './navbar';
-import SocialIcon from './social-icon';
 import './header.css';
 
-interface HeaderProps {
-  siteTitle: string;
-  siteTagline: string;
-  socialLinks: {
-    github: string;
-    facebook: string;
-    linkedIn: string;
-    twitter: string;
-    youTube: string;
-    instagram: string;
-  };
-}
-
-const Index: FunctionComponent<HeaderProps> = ({
-  siteTitle = ``,
-  siteTagline,
-  socialLinks,
-}) => (
+// eslint-disable-next-line @typescript-eslint/ban-types
+const Index: FunctionComponent<{}> = () => (
   <header className="header">
     <div className="header-container">
       <div className="logo">
@@ -34,20 +17,6 @@ const Index: FunctionComponent<HeaderProps> = ({
         </h1>
       </div>
       <NavBar />
-      {/* <div className="header-social-links-container">
-        {socialLinks.github && (
-          <SocialIcon
-            name="github"
-            link={`https://github.com/${socialLinks.github}`}
-          />
-        )}
-        {socialLinks.linkedIn && (
-          <SocialIcon
-            name="linkedin"
-            link={`https://linkedin.com/in/${socialLinks.linkedIn}`}
-          />
-        )}
-      </div> */}
     </div>
   </header>
 );

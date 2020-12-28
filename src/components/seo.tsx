@@ -18,7 +18,7 @@ interface SEOProps {
 
 const SEO: FunctionComponent<SEOProps> = ({
   description = ``,
-  lang = `en`,
+  lang = `fr`,
   meta = [],
   title,
 }) => {
@@ -30,9 +30,6 @@ const SEO: FunctionComponent<SEOProps> = ({
             title
             description
             tagline
-            socialLinks {
-              twitter
-            }
           }
         }
       }
@@ -47,7 +44,7 @@ const SEO: FunctionComponent<SEOProps> = ({
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title} ${site.siteMetadata.tagline}`}
+      titleTemplate={`${site.siteMetadata.title} ${site.siteMetadata.tagline}`}
       meta={[
         {
           name: `description`,
@@ -64,22 +61,6 @@ const SEO: FunctionComponent<SEOProps> = ({
         {
           property: `og:type`,
           content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: `@{site.siteMetadata.socialLinks.twitter}`,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
         },
       ].concat(meta)}
     />

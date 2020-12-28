@@ -20,13 +20,18 @@ interface ProjectsListsProps {
 }
 
 const Projects: FunctionComponent<ProjectsListsProps> = ({ projects }) => (
-  <section className="projects fullHeight">
+  <section id="projects" className="projects section">
     <h2 className="section-title projects__title">Projects</h2>
     {projects.map(({ node }, index) => {
       const { title, author, authorLink, techno, link, image } = node.frontmatter
 
       return (
         <div className="project" key={index}>
+          <div className="project__image">
+            <a href={link} target='blank'>
+              <Image className="image" fluid={image.childImageSharp.fluid} />
+            </a>
+          </div>
           <div className="project__content">
             <h3 className="project__title">
               <a className="project__titleLink" href={link} target='blank'>{title}</a>
@@ -34,9 +39,7 @@ const Projects: FunctionComponent<ProjectsListsProps> = ({ projects }) => (
             <p className="project__techno">{techno}</p>
             <p className="project__by">@ <a className="project__byLink" href={authorLink} target='blank'>{author}</a></p>
           </div>
-          <div className="project__image">
-              <Image className="image" fluid={image.childImageSharp.fluid} />
-          </div>
+          
         </div>
       );
     })}

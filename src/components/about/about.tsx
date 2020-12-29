@@ -26,15 +26,12 @@ const About: FunctionComponent<{}> = () => {
       <div className="about__wrapper">
         <div>
           <p>
-            Ex culpa deserunt sunt laborum mollit veniam sint reprehenderit reprehenderit.
-            Occaecat dolor consectetur sunt tempor officia minim magna aliqua eu quis.
+            Moi, c’est Gaétan. Je suis avant tout curieux, j’aime comprendre et crée des choses qui vivent sur Internet que ce soit des sites, des applications ou tout ce qui se trouvent autour.
           </p>
           <p>
-            Elit elit ullamco veniam elit reprehenderit. 
-            Ut quis id ad veniam pariatur est aute dolor amet est esse consectetur fugiat voluptate.
-            Anim ea aliqua exercitation reprehenderit consectetur voluptate voluptate. Ut Lorem ut nostrud ad.
-            Tempor labore esse aliquip magna excepteur occaecat proident fugiat duis consectetur sunt officia eiusmod.
+            J&apos;ai obtenu un Mastère Développeur Web à l&apos;ECV Digitale à Bordeaux en alternance chez Appstud où j&apos;étais développeur front web et mobile pendant 2 ans.
           </p>
+          <p>Je suis, à l&apos;heure actuelle, à la recherche d&apos;une opportunité, respectant l’humain et la planète, en France et même en Europe en tant que développeur front-end web et mobile.</p>
         </div>
         <div>
           <div className="about__image-wrapper">

@@ -3,7 +3,7 @@
   "private": true,
   "description": "Gaetan NICOLAS portfolio - Developer Front-End.",
   "version": "0.1.0",
-  "author": "Gaetan NICOLAS <hello@gaetannicolas.fr>",
+  "author": "Gaetan NICOLAS <gaetan@gaetannicolas.fr>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -55,9 +55,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/saranshkataria/gatsby-starter-blog-wisdomgeek"
+    "url": "https://github.com/gaetannicolas/portfolio"
   },
   "bugs": {
-    "url": "https://github.com/saranshkataria/gatsby-starter-blog-wisdomgeek/issues"
+    "url": "https://github.com/gaetannicolas/"
   }
 }

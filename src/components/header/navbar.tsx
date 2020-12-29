@@ -1,9 +1,18 @@
 import React, { FunctionComponent, useState, useRef } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { useOnClickOutside } from '../../hooks';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 const NavBar: FunctionComponent<{}> = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(extension: {eq: "pdf"}, name: {eq: "cv"}) {
+        publicURL
+      }
+    }
+  `);
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -36,7 +45,7 @@ const NavBar: FunctionComponent<{}> = () => {
               <a href="#contact" className="menu__link">Contact</a>
             </li>
             <li className="menu__item menu__item--resume">
-              <a href="cv.pdf" download className="menu__link">Resume</a>
+              <a href={data.file.publicURL} download className="menu__link">Resume</a>
             </li>
           </nav>
         </aside>

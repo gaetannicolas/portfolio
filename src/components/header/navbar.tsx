@@ -36,7 +36,7 @@ const NavBar: FunctionComponent<{}> = () => {
               <a href="#contact" className="menu__link">Contact</a>
             </li>
             <li className="menu__item menu__item--resume">
-              <a href="/src/images/cv.pdf" download className="menu__link">Resume</a>
+              <a href="cv.pdf" download className="menu__link">Resume</a>
             </li>
           </nav>
         </aside>

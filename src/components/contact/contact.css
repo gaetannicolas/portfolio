@@ -1,5 +1,6 @@
 .contact {
   box-sizing: border-box;
+  max-width: 1600px;
 }
 
 .contact__title {
@@ -32,6 +33,10 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .contact {
+    padding: 0 100px;
+  }
   .contact__text {
     text-align: center;
     margin: 50px 80px;

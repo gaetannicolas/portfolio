@@ -15,7 +15,7 @@ const Contact: FunctionComponent<ContactProps> = ({
   copyrightTagline,
   socialLinks
 }) => (
-  <section id="contact" className="contact section">
+  <section id="contact" className="contact">
     <h2 className="section-title">Next ?</h2>
     <h3 className="contact__title">N&apos;hésitez pas à me contacter</h3>
     <p className="contact__text">Vous cherchez un développeur ou vous voulez simplement parler des dernières tendances technologiques ? Prenez contact avec moi.</p>

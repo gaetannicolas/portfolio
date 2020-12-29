@@ -13,9 +13,9 @@
 
 .hero__second {
   font-weight: 400;
-  font-size: 2.2rem;
   font-size: clamp(2.2rem, 5vw, 3rem);
   color: #aeb8d6;
+  margin-right: 100px;
 }
 
 .hero__second  strong {
@@ -46,4 +46,11 @@
 
 .hero__button:hover {
   background-color: var(--green-tint);
+}
+
+
+@media screen and (min-width: 768px) {
+  .hero__second {
+    margin-right: 150px;
+  }
 }

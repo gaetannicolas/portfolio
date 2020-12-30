@@ -22,16 +22,16 @@ const About: FunctionComponent<{}> = () => {
 
    return (
     <section id="about" className="about section">
-      <h2 className="section-title about__title">About me</h2>
+      <h2 className="section-title about__title">Infos</h2>
       <div className="about__wrapper">
         <div>
           <p>
-            Moi, c’est Gaétan. Je suis avant tout curieux, j’aime comprendre et crée des choses qui vivent sur Internet que ce soit des sites, des applications ou tout ce qui se trouvent autour.
+            Moi, c’est Gaétan. Je suis avant tout curieux, j’aime comprendre et crée des choses qui vivent sur Internet que ce soit des sites, des applications ou tout ce qui se trouve autour.
           </p>
           <p>
             J&apos;ai obtenu un Mastère Développeur Web à l&apos;ECV Digitale à Bordeaux en alternance chez Appstud où j&apos;étais développeur front web et mobile pendant 2 ans.
           </p>
-          <p>Je suis, à l&apos;heure actuelle, à la recherche d&apos;une opportunité, respectant l’humain et la planète, en France et même en Europe en tant que développeur front-end web et mobile.</p>
+          <p>Je suis, à l&apos;heure actuelle, à la recherche d&apos;un emploi, respectant l’humain et la planète, en France et même en Europe en tant que développeur front-end web et mobile.</p>
         </div>
         <div>
           <div className="about__image-wrapper">

@@ -21,7 +21,7 @@ interface ProjectsListsProps {
 
 const Projects: FunctionComponent<ProjectsListsProps> = ({ projects }) => (
   <section id="projects" className="projects section">
-    <h2 className="section-title projects__title">Projects</h2>
+    <h2 className="section-title projects__title">Projets</h2>
     {projects.map(({ node }, index) => {
       const { title, author, authorLink, techno, link, image } = node.frontmatter
 

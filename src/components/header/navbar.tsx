@@ -36,16 +36,16 @@ const NavBar: FunctionComponent<{}> = () => {
         <aside className={menuOpen ? "menu active" : "menu"}>
           <nav className="menu__nav">
             <li className="menu__item">
-              <a href="#about" className="menu__link">About</a>
+              <a href="#about" className="menu__link">Infos</a>
             </li>
             <li className="menu__item">
-              <a href="#projects" className="menu__link">Project</a>
+              <a href="#projects" className="menu__link">Projets</a>
             </li>
             <li className="menu__item">
               <a href="#contact" className="menu__link">Contact</a>
             </li>
             <li className="menu__item menu__item--resume">
-              <a href={data.file.publicURL} download className="menu__link">Resume</a>
+              <a href={data.file.publicURL} download className="menu__link">CV</a>
             </li>
           </nav>
         </aside>

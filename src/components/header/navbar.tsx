@@ -26,7 +26,7 @@ const NavBar: FunctionComponent<{}> = () => {
         <body className={menuOpen ? 'blur' : ''} />
       </Helmet>
       <div ref={wrapperRef} >
-        <button onClick={toggleMenu} type="button" className="navbar__button">
+        <button onClick={toggleMenu} type="button" className="navbar__button" aria-label="burger-button">
           <div className={menuOpen ? "burger active" : "burger"}>
             <div className="burger__line burger__line--first"></div>
             <div className="burger__line burger__line--middle"></div>
@@ -45,7 +45,7 @@ const NavBar: FunctionComponent<{}> = () => {
               <a href="#contact" className="menu__link">Contact</a>
             </li>
             <li className="menu__item menu__item--resume">
-              <a href={data.file.publicURL} download className="menu__link">CV</a>
+              <a href={data.file.publicURL} target="blank" download className="menu__link">CV</a>
             </li>
           </nav>
         </aside>

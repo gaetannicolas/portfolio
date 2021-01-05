@@ -29,7 +29,7 @@ const Projects: FunctionComponent<ProjectsListsProps> = ({ projects }) => (
         <div className="project" key={index}>
           <div className="project__image">
             <a href={link} target='blank'>
-              <Image className="image" fluid={image.childImageSharp.fluid} />
+              <Image className="image" fluid={image.childImageSharp.fluid} alt={title} />
             </a>
           </div>
           <div className="project__content">

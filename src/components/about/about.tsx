@@ -26,7 +26,7 @@ const About: FunctionComponent<{}> = () => {
       <div className="about__wrapper">
         <div>
           <p>
-            Moi, c’est Gaétan. Je suis avant tout curieux, j’aime comprendre et crée des choses qui vivent sur Internet que ce soit des sites, des applications ou tout ce qui se trouve autour.
+            Moi, c’est Gaétan. Je suis avant tout curieux, j’aime comprendre et créer des choses qui vivent sur Internet que ce soit des sites, des applications ou tout ce qui se trouve autour.
           </p>
           <p>
             J&apos;ai obtenu un Mastère Développeur Web à l&apos;ECV Digitale à Bordeaux en alternance chez Appstud où j&apos;étais développeur front web et mobile pendant 2 ans.

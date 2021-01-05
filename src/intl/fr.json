@@ -1,0 +1,21 @@
+{
+  "menu": {
+    "about": "Infos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "resume": "CV"
+  },
+  "hello": "Bonjour, je m'appelle",
+  "subTitle": "Je suis un développeur front-end, basé en France, qui travaille surtout avec ",
+  "and": "et",
+  "about": {
+    "intro": "Moi, c’est Gaétan. Je suis avant tout curieux, j’aime comprendre et créer des choses qui vivent sur Internet que ce soit des sites, des applications ou tout ce qui se trouve autour.",
+    "education": "J'ai obtenu un Mastère Développeur Web à l'ECV Digitale à Bordeaux en alternance chez Appstud où j'étais développeur front web et mobile pendant 2 ans.",
+    "search": "Je suis, à l'heure actuelle, à la recherche d'un emploi, respectant l’humain et la planète, en France et même en Europe en tant que développeur front-end web et mobile."
+  },
+  "contact": {
+    "sectionTitle": "Next ?",
+    "title": "N'hésitez pas à me contacter",
+    "text": "Vous cherchez un développeur ou vous voulez simplement discuter ? Prenez contact avec moi :"
+  }
+}

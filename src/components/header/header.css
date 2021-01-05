@@ -28,10 +28,42 @@ body.blur #content > * {
 .logo {
   width: 50px;
   height: auto;
+  display: flex;
 }
 .logo-icon {
   width: 50px;
   height: auto;
+}
+
+.language {
+  display: flex;
+  margin-left: 25px;
+}
+
+.language__selector {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+  transition: var(--transition);
+}
+
+.language__selector:first-child:after {
+  content: "/";
+  position: absolute;
+  right: -10px;
+  margin-left: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.language__selector--active {
+  color: var(--green);
+  text-decoration: underline;
 }
 
 .navbar__button {

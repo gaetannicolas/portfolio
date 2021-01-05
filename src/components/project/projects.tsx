@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import Image, { FluidObject } from 'gatsby-image';
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 import './projects.css';
 
@@ -21,7 +22,9 @@ interface ProjectsListsProps {
 
 const Projects: FunctionComponent<ProjectsListsProps> = ({ projects }) => (
   <section id="projects" className="projects section">
-    <h2 className="section-title projects__title">Projets</h2>
+    <h2 className="section-title projects__title">
+      <FormattedMessage id="menu.projects" />
+    </h2>
     {projects.map(({ node }, index) => {
       const { title, author, authorLink, techno, link, image } = node.frontmatter
 

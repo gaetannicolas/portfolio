@@ -53,5 +53,15 @@ module.exports = {
         display: 'swap',
       },
     },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: [`fr`, `en`],
+        defaultLanguage: `fr`,
+        redirect: true,
+        redirectComponent: require.resolve(`./src/components/redirect.tsx`),
+      },
+    },
   ],
 };

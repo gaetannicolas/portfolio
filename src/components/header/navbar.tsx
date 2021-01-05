@@ -1,7 +1,9 @@
 import React, { FunctionComponent, useState, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import { FormattedMessage } from "gatsby-plugin-intl"
 import { useOnClickOutside } from '../../hooks';
+
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 const NavBar: FunctionComponent<{}> = () => {
@@ -36,16 +38,16 @@ const NavBar: FunctionComponent<{}> = () => {
         <aside className={menuOpen ? "menu active" : "menu"}>
           <nav className="menu__nav">
             <li className="menu__item">
-              <a href="#about" className="menu__link">Infos</a>
+              <a href="#about" className="menu__link"><FormattedMessage id="menu.about" /></a>
             </li>
             <li className="menu__item">
-              <a href="#projects" className="menu__link">Projets</a>
+              <a href="#projects" className="menu__link"><FormattedMessage id="menu.projects" /></a>
             </li>
             <li className="menu__item">
-              <a href="#contact" className="menu__link">Contact</a>
+              <a href="#contact" className="menu__link"><FormattedMessage id="menu.contact" /></a>
             </li>
             <li className="menu__item menu__item--resume">
-              <a href={data.file.publicURL} target="blank" download className="menu__link">CV</a>
+              <a href={data.file.publicURL} target="blank" download className="menu__link"><FormattedMessage id="menu.resume" /></a>
             </li>
           </nav>
         </aside>

@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import React, { FunctionComponent } from 'react';
 import NavBar from './navbar';
+import Language from './language'
 import './header.css';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
@@ -15,6 +16,7 @@ const Index: FunctionComponent<{}> = () => (
             </svg>
           </Link>
         </h1>
+        <Language />
       </div>
       <NavBar />
     </div>

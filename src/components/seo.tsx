@@ -8,6 +8,7 @@
 import React, { FunctionComponent } from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
+import { useIntl } from "gatsby-plugin-intl"
 
 interface SEOProps {
   description?: string;

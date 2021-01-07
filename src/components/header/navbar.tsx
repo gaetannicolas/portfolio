@@ -2,14 +2,15 @@ import React, { FunctionComponent, useState, useRef } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage } from "gatsby-plugin-intl"
-import { useOnClickOutside } from '../../hooks';
+import { useOnClickOutside } from "../../hooks";
+import Language from "./language"
 
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 const NavBar: FunctionComponent<{}> = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(extension: {eq: "pdf"}, name: {eq: "cv"}) {
+      file(extension: {eq: "pdf"}, name: {eq: "cv_gaetannicolas"}) {
         publicURL
       }
     }
@@ -36,6 +37,7 @@ const NavBar: FunctionComponent<{}> = () => {
           </div>
         </button>
         <aside className={menuOpen ? "menu active" : "menu"}>
+          <Language styleClass="language" />
           <nav className="menu__nav">
             <li className="menu__item">
               <a href="#about" className="menu__link"><FormattedMessage id="menu.about" /></a>

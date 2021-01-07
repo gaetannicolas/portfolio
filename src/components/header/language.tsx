@@ -11,9 +11,8 @@ interface LanguageProps {
   language: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/ban-types
-const Language: FunctionComponent<{}> = () => (
-  <div className="language">
+const Language: FunctionComponent<{ styleClass: string }> = ({ styleClass }) => (
+  <div className={styleClass}>
     <IntlContextConsumer>
       {
       ({ languages, language: currentLocale }: LanguageProps) =>

@@ -35,6 +35,9 @@ const About: FunctionComponent<{}> = () => {
           <p>
             <FormattedMessage id="about.search" />
           </p>
+          <p>
+            <FormattedMessage id="about.work" />
+          </p>
         </div>
         <div>
           <div className="about__image-wrapper">

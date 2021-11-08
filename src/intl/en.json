@@ -6,12 +6,13 @@
     "resume": "Resume"
   },
   "hello": "Hi, my name is",
-  "subTitle": "I am a front-end developer, based in France, working mainly with ",
+  "subTitle": "I am front-end developer, based in France, working mainly with ",
   "and": "and",
   "about": {
     "intro": "I'm Gaetan. First of all, I am curious, I like to understand and create things that live on the Internet whether it be sites, applications or anything else around",
-    "education": "I obtained a Master's Degree in Web Development at ECV Digitale in Bordeaux in work-study programme at Appstud where I was a web and mobile front end developer for 2 years",
-    "search": "I'm currently looking for a job, respecting the human and the planet, in France and even in Europe as a web and mobile front-end developer."
+    "education": "I obtained a Master's Degree in Web Development in 2020 at ECV Digitale in Bordeaux in work-study programme at Appstud where I was a web and mobile front end developer for 2 years",
+    "search": "I am always concerned about creating tools that respect people and the planet.",
+    "work": "I am currently working at Recyclivre as a Mobile Developer."
   },
   "contact": {
     "sectionTitle": "Next ?",

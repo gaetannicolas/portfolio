@@ -31,7 +31,7 @@ const Contact: FunctionComponent<ContactProps> = ({
     <p><a className="contact__link" href={socialLinks.linkedIn} target="blank">linkedin</a> </p>
     <p><a className="contact__link" href={socialLinks.github} target="blank">github</a> </p>
 
-    <div className="copyright">2021 &copy; {copyrightTagline}</div>
+    <div className="copyright">2022 &copy; {copyrightTagline}</div>
   </section>
 );
 
